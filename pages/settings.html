@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Finora</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<main class="main-content">
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">ACCOUNT PREFERENCES</p>
+            <h1>Settings</h1>
+            <p class="subtitle">Manage your profile information.</p>
+        </div>
+        <a class="view-all" href="../index.html">← Dashboard</a>
+    </header>
+
+    <section class="panel">
+        <h3>Personal Information</h3>
+        <p class="subtitle">Update your sample profile details.</p>
+
+        <form class="settings-form">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" type="text" value="Alex Morgan">
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" value="alex@example.com">
+
+            <label for="currency">Preferred Currency</label>
+            <select id="currency">
+                <option>Indian Rupee (INR)</option>
+                <option>US Dollar (USD)</option>
+                <option>Euro (EUR)</option>
+            </select>
+
+            <label for="period">Budget Period</label>
+            <select id="period">
+                <option>Monthly</option>
+                <option>Weekly</option>
+                <option>Yearly</option>
+            </select>
+
+            <button type="button" class="save-button">
+                Save Preferences
+            </button>
+        </form>
+    </section>
+</main>
+</body>
+</html>

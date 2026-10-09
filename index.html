@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finora | Expense Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Finora<span>.</span></h2>
+            <p class="menu-title">MAIN MENU</p>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link active">▦ Dashboard</a>
+                <a href="pages/analytics.html" class="nav-link">◷ Analytics</a>
+                <a href="pages/transactions.html" class="nav-link">⇄ Transactions</a>
+                <a href="pages/budgets.html" class="nav-link">▤ Budgets</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="pages/settings.html" class="nav-link">⚙ Settings</a>
+                <div class="profile">
+                    <div class="avatar">A</div>
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <small>Personal Account</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">OVERVIEW</p>
+                    <h1>Financial Dashboard</h1>
+                    <p class="subtitle">Welcome back! Here's your financial summary.</p>
+                </div>
+                <div class="topbar-right">
+                    <span class="date">October 2026</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <!-- Summary Cards -->
+            <section class="summary-grid">
+
+                <article class="summary-card">
+                    <div class="card-top">
+                        <span>Total Balance</span>
+                        <span class="card-icon purple">₹</span>
+                    </div>
+                    <h2>₹84,250</h2>
+                    <p class="positive">↑ 12.8% <span>from last month</span></p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="card-top">
+                        <span>Total Income</span>
+                        <span class="card-icon green">↙</span>
+                    </div>
+                    <h2>₹65,000</h2>
+                    <p class="positive">↑ 8.2% <span>from last month</span></p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="card-top">
+                        <span>Total Expenses</span>
+                        <span class="card-icon orange">↗</span>
+                    </div>
+                    <h2>₹28,750</h2>
+                    <p class="negative">↑ 3.4% <span>from last month</span></p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="card-top">
+                        <span>Total Savings</span>
+                        <span class="card-icon blue">◇</span>
+                    </div>
+                    <h2>₹36,250</h2>
+                    <p class="positive">↑ 15.6% <span>from last month</span></p>
+                </article>
+
+            </section>
+
+            <!-- Analytics and Budgets -->
+            <section class="content-grid">
+
+                <article class="panel spending-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Spending Overview</h3>
+                            <p class="subtitle">Your monthly expenses</p>
+                        </div>
+                        <span class="tag">Last 6 months</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-labels">
+                            <span>₹30k</span>
+                            <span>₹20k</span>
+                            <span>₹10k</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="chart-area">
+                            <div class="grid-lines">
+                                <span></span><span></span>
+                                <span></span><span></span>
+                            </div>
+
+                            <div class="bars">
+                                <div class="bar-item">
+                                    <div class="bar" style="--height: 45%"></div>
+                                    <small>May</small>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar" style="--height: 62%"></div>
+                                    <small>Jun</small>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar" style="--height: 52%"></div>
+                                    <small>Jul</small>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar" style="--height: 78%"></div>
+                                    <small>Aug</small>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar" style="--height: 60%"></div>
+                                    <small>Sep</small>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar current" style="--height: 88%"></div>
+                                    <small>Oct</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-legend">
+                        <span class="legend-dot"></span>
+                        Monthly expenses
+                    </div>
+                </article>
+
+                <article class="panel budget-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Budget Overview</h3>
+                            <p class="subtitle">Monthly spending limits</p>
+                        </div>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-info">
+                            <span>Food & Dining</span>
+                            <strong>₹4,500 / ₹6,000</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress purple-fill" style="--progress: 75%"></div>
+                        </div>
+                        <small>75% of budget used</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-info">
+                            <span>Shopping</span>
+                            <strong>₹3,200 / ₹5,000</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress orange-fill" style="--progress: 64%"></div>
+                        </div>
+                        <small>64% of budget used</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-info">
+                            <span>Transportation</span>
+                            <strong>₹1,500 / ₹3,000</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress green-fill" style="--progress: 50%"></div>
+                        </div>
+                        <small>50% of budget used</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-info">
+                            <span>Entertainment</span>
+                            <strong>₹2,400 / ₹3,000</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress red-fill" style="--progress: 80%"></div>
+                        </div>
+                        <small>80% of budget used</small>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Transactions -->
+            <section class="panel transactions-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Recent Transactions</h3>
+                        <p class="subtitle">Your latest financial activity</p>
+                    </div>
+                    <a class="view-all" href="pages/transactions.html">View all →</a>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>TRANSACTION</th>
+                                <th>CATEGORY</th>
+                                <th>DATE</th>
+                                <th>STATUS</th>
+                                <th class="amount">AMOUNT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monthly Salary</strong></td>
+                                <td>Income</td>
+                                <td>Oct 01, 2026</td>
+                                <td><span class="status received">Received</span></td>
+                                <td class="amount income">+₹65,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Grocery Store</strong></td>
+                                <td>Food</td>
+                                <td>Oct 04, 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td class="amount">-₹1,850</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Internet Bill</strong></td>
+                                <td>Utilities</td>
+                                <td>Oct 06, 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td class="amount">-₹999</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Online Shopping</strong></td>
+                                <td>Shopping</td>
+                                <td>Oct 08, 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td class="amount">-₹2,499</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2026 Finora. Personal Finance Dashboard.</p>
+                <p>Designed with HTML & CSS</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
